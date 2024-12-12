@@ -31,7 +31,7 @@ export const PageHead = () => {
         >
           <Button p="0" variant="text" mt="4px">
             <Text color="primary" bold fontSize="16px" mr="4px">
-              {t('Get CAKE')}
+              {t('Get STAKE')}
             </Text>
             <ArrowForwardIcon color="primary" />
           </Button>
