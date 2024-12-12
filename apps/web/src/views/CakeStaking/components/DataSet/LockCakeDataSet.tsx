@@ -41,7 +41,7 @@ export const LockCakeDataSet: React.FC<React.PropsWithChildren<LockCakeDataSetPr
   return (
     <DataBox $hideStyle={hideLockCakeDataSetStyle} gap="8px" mt="16px">
       <DataHeader value={veCakeAmount} hideVeCakeIcon={hideLockCakeDataSetStyle} />
-      <DataRow label={t('CAKE to be locked')} value={amount.toFixed(2)} />
+      <DataRow label={t('stakeTRRXITTE to be locked')} value={amount.toFixed(2)} />
       <DataRow
         label={
           <Tooltips

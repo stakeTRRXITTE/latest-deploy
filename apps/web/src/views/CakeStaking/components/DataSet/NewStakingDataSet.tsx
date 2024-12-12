@@ -65,7 +65,7 @@ export const NewStakingDataSet: React.FC<React.PropsWithChildren<NewStakingDataS
           <DataRow
             label={
               <Text fontSize={14} color="textSubtle" textTransform="uppercase">
-                {t('CAKE to be locked')}
+                {t('stakeTRRXITTE to be locked')}
               </Text>
             }
             value={<ValueText>{cakeAmount}</ValueText>}
