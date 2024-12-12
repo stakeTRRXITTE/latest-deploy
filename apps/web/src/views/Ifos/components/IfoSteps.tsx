@@ -119,7 +119,7 @@ const Step1 = ({
   return (
     <CardBody>
       <Heading as="h4" color="secondary" mb="16px">
-        {t('Lock CAKE in the BNB Chain CAKE Staking')}
+        {t('Lock CAKE in the BNB Chain STAKE minting')}
       </Heading>
       <Box>
         <Text mb="4px" color="textSubtle" small>
@@ -168,7 +168,7 @@ const Step1 = ({
           }
           action={
             <RouterLink to="/cake-staking">
-              <Button>{t('View CAKE Staking')}</Button>
+              <Button>{t('View STAKE minting')}</Button>
             </RouterLink>
           }
         />

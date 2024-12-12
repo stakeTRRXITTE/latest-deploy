@@ -60,11 +60,11 @@ export const NoVeCakeCard = ({
             <>{ConnectWalletButton}</>
           ) : userChainId && userChainId === nativeChainId ? (
             <Button mt="16px" width="100%" as={Link} href="/cake-staking">
-              {t("Go to CAKE Staking")}
+              {t("Go to STAKE minting")}
             </Button>
           ) : (
             <Button mt="16px" width="100%" onClick={() => onClick?.()}>
-              {t("Go to CAKE Staking")}
+              {t("Go to STAKE minting")}
             </Button>
           )}
         </Box>

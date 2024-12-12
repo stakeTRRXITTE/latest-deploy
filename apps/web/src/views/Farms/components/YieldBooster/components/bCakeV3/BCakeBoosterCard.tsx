@@ -159,7 +159,7 @@ const CardContent: React.FC<{ variants?: 'farm' | 'pm' }> = ({ variants }) => {
         </Text>
         <NextLink href="/cake-staking" passHref>
           <Button width="100%" style={{ backgroundColor: theme.colors.textSubtle }}>
-            {t('Go to CAKE Staking')}
+            {t('Go to STAKE minting')}
           </Button>
         </NextLink>
       </Box>

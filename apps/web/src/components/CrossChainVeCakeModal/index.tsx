@@ -358,7 +358,7 @@ const InfoBox = () => {
   return (
     <StyleUl>
       <li>{t('Once synced, your veCAKE on the selected network will stay in sync with BNB Chain.')}</li>
-      <li>{t('You will need to sync again after extending or adding more CAKE to your CAKE Staking position.')}</li>
+      <li>{t('You will need to sync again after extending or adding more CAKE to your STAKE minting position.')}</li>
       <li>{t('Your Pancake Profile will be synced along with your veCAKE.')}</li>
     </StyleUl>
   )

@@ -1,24 +1,24 @@
-import { Ifo } from '@pancakeswap/widgets-internal'
 import { ChainId } from '@pancakeswap/chains'
-import { Button } from '@pancakeswap/uikit'
 import { useTranslation } from '@pancakeswap/localization'
-import Link from 'next/link'
-import { SpaceProps } from 'styled-system'
-import { useAccount } from 'wagmi'
-import { Address } from 'viem'
-import { useMemo } from 'react'
-import BigNumber from 'bignumber.js'
 import { CAKE } from '@pancakeswap/tokens'
+import { Button } from '@pancakeswap/uikit'
 import { formatBigInt } from '@pancakeswap/utils/formatBalance'
+import { Ifo } from '@pancakeswap/widgets-internal'
+import BigNumber from 'bignumber.js'
+import Link from 'next/link'
+import { useMemo } from 'react'
+import { SpaceProps } from 'styled-system'
+import { Address } from 'viem'
+import { useAccount } from 'wagmi'
 
-import { useCakePrice } from 'hooks/useCakePrice'
-import { useActiveChainId } from 'hooks/useActiveChainId'
 import ConnectWalletButton from 'components/ConnectWalletButton'
+import { useActiveChainId } from 'hooks/useActiveChainId'
+import { useCakePrice } from 'hooks/useCakePrice'
 
 // TODO should be common hooks
-import { useCakeLockStatus } from 'views/CakeStaking/hooks/useVeCakeUserInfo'
 import { useIsMigratedToVeCake } from 'views/CakeStaking/hooks/useIsMigratedToVeCake'
 import { useIsUserDelegated } from 'views/CakeStaking/hooks/useIsUserDelegated'
+import { useCakeLockStatus } from 'views/CakeStaking/hooks/useVeCakeUserInfo'
 
 import { useUserIfoInfo } from '../hooks/useUserIfoInfo'
 
@@ -27,7 +27,7 @@ function NavigateButton(props: SpaceProps) {
 
   return (
     <Button width="100%" as={Link} href="/cake-staking" {...props}>
-      {t('Go to CAKE Staking')}
+      {t('Go to STAKE minting')}
     </Button>
   )
 }
