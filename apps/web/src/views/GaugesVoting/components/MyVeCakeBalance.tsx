@@ -28,7 +28,7 @@ export const MyVeCakeBalance = () => {
       <img src="/images/cake-staking/token-vecake.png" alt="token-vecake" width="58px" />
       <Flex flexDirection={['column', 'column', 'row']} ml="4px">
         <Text fontSize="20px" bold lineHeight="120%" mr="16px">
-          {t('MY veCAKE')}
+          {t('MY reserves [ESTATE]')}
         </Text>
         <FlexGap gap="4px" alignItems="center">
           <Balance
