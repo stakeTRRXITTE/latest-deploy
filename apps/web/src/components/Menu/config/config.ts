@@ -58,20 +58,19 @@ const config: (
           label: t('Swap'),
           href: '/',
         },
-
       ].map((item) => addMenuItemSupported(item, chainId)),
     },
     {
       label: t('Earn'),
-      href: '/liquidity/pools',
+      href: '/liquidity/positions',
       icon: EarnIcon,
       fillIcon: EarnFillIcon,
       image: '/images/decorations/pe2.png',
       supportChainIds: SUPPORT_FARMS,
       overrideSubNavItems: [
         {
-          label: t('Farm / Liquidity'),
-          href: '/liquidity/pools',
+          label: t('active liquidity'),
+          href: '/liquidity/positions',
           supportChainIds: SUPPORT_FARMS,
         },
         {
@@ -87,8 +86,8 @@ const config: (
       ].map((item) => addMenuItemSupported(item, chainId)),
       items: [
         {
-          label: t('Farm / Liquidity'),
-          href: '/liquidity/pools',
+          label: t('active liquidity'),
+          href: '/liquidity/positions',
           matchHrefs: ['/liquidity/positions', '/farms'],
           supportChainIds: SUPPORT_FARMS,
         },

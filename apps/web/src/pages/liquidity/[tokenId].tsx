@@ -63,6 +63,7 @@ import { NextSeo } from 'next-seo'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { ReactNode, memo, useCallback, useMemo, useState } from 'react'
+import { usePoolInfo } from 'state/farmsV4/state/extendPools/hooks'
 import { ChainLinkSupportChains } from 'state/info/constant'
 import { useSingleCallResult } from 'state/multicall/hooks'
 import { useIsTransactionPending, useTransactionAdder } from 'state/transactions/hooks'
@@ -81,7 +82,6 @@ import { AprCalculatorV2 } from 'views/AddLiquidityV3/components/AprCalculatorV2
 import RateToggle from 'views/AddLiquidityV3/formViews/V3FormView/components/RateToggle'
 import Page from 'views/Page'
 import { useSendTransaction, useWalletClient } from 'wagmi'
-import { usePoolInfo } from 'state/farmsV4/state/extendPools/hooks'
 
 export const BodyWrapper = styled(Card)`
   border-radius: 24px;
@@ -507,7 +507,7 @@ export default function PoolPage() {
               'has an active PancakeSwap farm. Stake your position in the farm to start earning with the indicated APR with CAKE farming.',
             )}
           </Text>
-          <NextLinkFromReactRouter to="/liquidity/pools">
+          <NextLinkFromReactRouter to="/liquidity/positions">
             <Text display="inline" bold ml="0.25em" style={{ textDecoration: 'underline' }}>
               {t('Go to Farms')} {' >>'}
             </Text>

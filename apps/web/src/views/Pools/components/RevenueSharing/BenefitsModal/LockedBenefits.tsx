@@ -44,7 +44,7 @@ const LockedBenefits = () => {
   const bCakeTooltipComponent = () => (
     <>
       <Text>{t('bCAKE allows you to boost your yield in PancakeSwap Farms by up to 2x.')}</Text>
-      <NextLinkFromReactRouter to="/liquidity/pools">
+      <NextLinkFromReactRouter to="/liquidity/positions">
         <Text bold color="primary">
           {t('Learn More')}
         </Text>
