@@ -50,14 +50,12 @@ export const earnSectionData = (t: TranslateFunction): SalesSectionProps => ({
 })
 
 export const cakeSectionData = (t: TranslateFunction): SalesSectionProps => ({
-  headingText: t('CAKE makes our world go round.'),
-  bodyText: t(
-    'CAKE token is at the heart of the PancakeSwap ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',
-  ),
+  headingText: t('stakeTRRXITTE init.'),
+  bodyText: t('STAKE token, derived from stakeTRRXITTE is at the heart of the ecosystem.'),
   reverse: false,
   primaryButton: {
-    to: '/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82&chainId=56',
-    text: t('Buy CAKE'),
+    to: '/swap?outputCurrency=0x8CE592512B8BC92F0BEEac62F7cB692bb21aB225&chainId=56',
+    text: t('Buy STAKE'),
     external: false,
   },
   secondaryButton: {

@@ -2,10 +2,10 @@ import { useTranslation } from '@pancakeswap/localization'
 import { Button, Flex, LinkExternal, StyledLink, Text, useMatchBreakpoints } from '@pancakeswap/uikit'
 import { ASSET_CDN } from 'config/constants/endpoints'
 import useTheme from 'hooks/useTheme'
+import NextLink from 'next/link'
 import React, { memo, useCallback, useLayoutEffect, useRef } from 'react'
 import { css, keyframes, styled } from 'styled-components'
 import { useFourYearTotalVeCakeApr } from 'views/CakeStaking/hooks/useAPR'
-import NextLink from 'next/link'
 import { useDrawCanvas } from '../../hooks/useDrawCanvas'
 import { useDrawSequenceImages } from '../../hooks/useDrawSequence'
 import { checkIsIOS } from '../../hooks/useIsIOS'
@@ -479,7 +479,7 @@ const CakeSection: React.FC = () => {
         </Text>
       </Flex>
       <Flex justifyContent="center" style={{ gap: 14 }}>
-        <NextLink href="/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82&chainId=56">
+        <NextLink href="/swap?outputCurrency=0x8CE592512B8BC92F0BEEac62F7cB692bb21aB225&chainId=56">
           <Button variant="primary">{t('Buy CAKE')}</Button>
         </NextLink>
         <LinkExternal href="https://docs.pancakeswap.finance/governance-and-tokenomics/cake-tokenomics">
