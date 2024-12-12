@@ -103,9 +103,7 @@ const Description = () => {
     <Grid justifyContent="space-between" gridTemplateColumns={staking ? '1fr' : ['4fr 1fr', '4fr 1fr', '1fr']}>
       <DescriptionContent fullSize={staking}>
         <Text color="textSubtle" lineHeight="120%">
-          {t(
-            'Enjoy the benefits of weekly CAKE yield, revenue share, gauges voting, farm yield boosting, participating in IFOs, and so much more!',
-          )}
+          {t('Enjoy the benefits of weekly STAKE yield, revenue share and voting!')}
         </Text>
       </DescriptionContent>
       {isMobile && !staking ? <MobileHeadBunny /> : null}
