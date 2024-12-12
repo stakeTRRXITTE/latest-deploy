@@ -45,8 +45,8 @@ import {
 } from '../hooks/useAPR'
 import { useCurrentBlockTimestamp } from '../hooks/useCurrentBlockTimestamp'
 import { useRevenueSharingCakePool, useRevenueSharingVeCake } from '../hooks/useRevenueSharingProxy'
-import { MyVeCakeCard } from './MyVeCakeCard'
 import { useCakeLockStatus } from '../hooks/useVeCakeUserInfo'
+import { MyVeCakeCard } from './MyVeCakeCard'
 
 const StyledModalHeader = styled(ModalHeader)`
   padding: 0;
@@ -290,7 +290,7 @@ export const CakeRewardsCard = ({ onDismiss }) => {
                         <br />
                         <p>
                           {t(
-                            'The veCAKE Pool APR is calculated based on the emission speed which is defined by the voting result of the veCAKE Pool gauge in Gauges Voting.',
+                            'The [ESTATE] Pool APR is calculated based on the emission speed which is defined by the voting result of the veCAKE Pool gauge in Gauges Voting.',
                           )}
                         </p>
                         <br />

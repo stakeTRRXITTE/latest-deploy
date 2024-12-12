@@ -95,7 +95,7 @@ export const TotalApy: React.FC<React.PropsWithChildren<TotalApyProps>> = ({ veC
           🔹{t('Total APR')}
         </Text>
         <Text ml="4px" as="span">
-          {t('is the sum of veCAKE Pool APR, Revenue sharing APR and Birbes APY from Guages voting.')}
+          {t('is the sum of [ESTATE] Pool APR, Revenue sharing APR and Birbes APY from Guages voting.')}
         </Text>
       </Box>
       <Link mt="8px" external href="https://docs.pancakeswap.finance/products/vecake/faq#why-there-are-multiple-aprs">
@@ -115,7 +115,7 @@ export const TotalApy: React.FC<React.PropsWithChildren<TotalApyProps>> = ({ veC
     <Box>
       <Box>
         <Text bold as="span">
-          {t('veCAKE Pool APR')}
+          {t('[ESTATE] Pool APR')}
         </Text>
         <Text ml="4px" as="span">
           {t('is generated from CAKE emission, controlled by the veCAKE Pool gauge.')}
@@ -196,7 +196,7 @@ export const TotalApy: React.FC<React.PropsWithChildren<TotalApyProps>> = ({ veC
       <Box ml="25px">
         <Flex mt="4px" justifyContent="space-between">
           <TooltipText fontSize="14px" color="textSubtle" ref={veCakePoolAprRef}>
-            {t('veCAKE Pool APR')}
+            {t('[ESTATE] Pool APR')}
           </TooltipText>
           {shouldShow4yrApr ? (
             <Text>{t('Up to %apr%%', { apr: cakePoolApr.toFixed(2) })} </Text>
